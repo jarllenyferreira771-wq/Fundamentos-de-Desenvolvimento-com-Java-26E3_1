@@ -6,24 +6,31 @@ public class Filme {
 	int ano;
 	double avaliacao;
 	
-	void impressao () {
-		
+	void impressao () {		
 		System.out.printf("O filme %s lançado em %d possui a avaliação %.1f%n", titulo, ano, avaliacao);
-
+		
+		double notaEmEstrelas = calcularNotaEmEstrelas();
+		
+		System.out.println("Estrelas:" + notaEmEstrelas);	
+		
 	}
 	
 	void exibirResumo() {
-		System.out.println(titulo + "(" +ano+ ")");
+		
+		double notaEmEstrelas = calcularNotaEmEstrelas();
+		System.out.println(titulo + "(" +ano+ ") Estrelas:" + notaEmEstrelas);
 	}
 	
 	void avaliar (double nota) {
-		avaliacao = nota;
+		avaliacao = nota;		
+	}
+	
+	double calcularNotaEmEstrelas() {
+		return  avaliacao / 2;	
 		
 	}
 	
-	void atualizatAno(int novoAno) {
-		
+	void atualizarAno(int novoAno) {
 		ano = novoAno;
 	}
-
 }

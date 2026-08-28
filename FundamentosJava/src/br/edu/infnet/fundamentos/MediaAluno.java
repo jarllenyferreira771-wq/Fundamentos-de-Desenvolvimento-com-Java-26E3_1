@@ -21,19 +21,7 @@ public class MediaAluno {
         System.out.print("Digite a nota do TP3: ");
         aluno.notaTP3 = scanner.nextDouble();
 
-       
-        aluno.calcularMedia();
-        
-        
-        if (aluno.media >= 7) {
-        	aluno.situacao = "Aprovado";
-        } else if (aluno.media >= 5 ) {
-        	aluno.situacao = "Em recuperação";
-        } else {
-        	aluno.situacao = "Reprovado";
-        }
-        
-        
+             
        aluno.imprimir();
         
         scanner.close();

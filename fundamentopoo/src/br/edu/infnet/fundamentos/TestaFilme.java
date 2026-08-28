@@ -6,21 +6,22 @@ public class TestaFilme {
 		
 		Filme filmeJay = new Filme();
 		filmeJay.avaliar(0);
-		filmeJay.impressao();
+		filmeJay.exibirResumo();
 		
 		Filme filmeMatrix = new Filme();
 		filmeMatrix.titulo = "Matrix";
 		filmeMatrix.ano = 1999;
 		filmeMatrix.avaliar(9.5);
-		filmeMatrix.atualizatAno(2000);
+		filmeMatrix.atualizarAno(2000);
 		filmeMatrix.impressao();
-		filmeMatrix.exibirResumo();
+		
 		
 		Filme filmeInterestelar = new Filme();
 		filmeInterestelar.titulo = "Interestelar";
 		filmeInterestelar.ano = 2014;
 		filmeInterestelar.avaliar(10);
 		filmeInterestelar.impressao();
+		filmeInterestelar.exibirResumo();
 		
 		Filme outroFilme = new Filme();
 		outroFilme.titulo = "Interestelar";
