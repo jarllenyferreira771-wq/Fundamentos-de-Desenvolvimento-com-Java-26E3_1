@@ -6,33 +6,36 @@ public class MediaAluno {
 
     public static void main(String[] args) {
 
-        Scanner notas = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        Aluno aluno = new Aluno();
+        
+        System.out.print("Digite o nome do aluno: ");
+        aluno.nome = scanner.nextLine();
         
         System.out.print("Digite a nota do TP1: ");
-        double notaTP1 = notas.nextDouble();
+        aluno.notaTP1 = scanner.nextDouble();
 
         System.out.print("Digite a nota do TP2: ");
-        double notaTP2 = notas.nextDouble();
+        aluno.notaTP2 = scanner.nextDouble();
 
         System.out.print("Digite a nota do TP3: ");
-        double notaTP3 = notas.nextDouble();
+        aluno.notaTP3 = scanner.nextDouble();
 
-        double media = (notaTP1 + notaTP2 + notaTP3) / 3;
+       
+        aluno.calcularMedia();
         
-        String situacao = null;
         
-        
-        if (media >= 7) {
-        	situacao = "Aprovado";
-        } else if (media >= 5 ) {
-        	situacao = "Em recuperação";
+        if (aluno.media >= 7) {
+        	aluno.situacao = "Aprovado";
+        } else if (aluno.media >= 5 ) {
+        	aluno.situacao = "Em recuperação";
         } else {
-        	situacao = "Reprovado";
+        	aluno.situacao = "Reprovado";
         }
         
-        System.out.printf("Media = %.1f%n", media);
-        System.out.println("Situacao: " + situacao);
         
-        notas.close();
+       aluno.imprimir();
+        
+        scanner.close();
     }
 }
