@@ -1,4 +1,6 @@
-package br.edu.infnet.fundamentos;
+package br.edu.infnet.fundamentos.testes;
+
+import br.edu.infnet.fundamentos.model.Filme;
 
 public class TestaFilme {
 	
@@ -9,23 +11,22 @@ public class TestaFilme {
 		filmeJay.exibirResumo();
 		
 		Filme filmeMatrix = new Filme();
-		filmeMatrix.titulo = "Matrix";
-		filmeMatrix.ano = 1999;
-		filmeMatrix.avaliar(9.5);
-		filmeMatrix.atualizarAno(2000);
+		filmeMatrix.setTitulo("Matrix"); 
+		filmeMatrix.avaliar(-5);
+		filmeMatrix.setAno(2000);
 		filmeMatrix.impressao();
 		
 		
 		Filme filmeInterestelar = new Filme();
-		filmeInterestelar.titulo = "Interestelar";
-		filmeInterestelar.ano = 2014;
+		filmeInterestelar.setTitulo("Interestelar");
+		filmeInterestelar.setAno(2014);
 		filmeInterestelar.avaliar(10);
 		filmeInterestelar.impressao();
 		filmeInterestelar.exibirResumo();
 		
 		Filme outroFilme = new Filme();
-		outroFilme.titulo = "Interestelar";
-		outroFilme.ano = 2014;
+		outroFilme.setTitulo("Interestelar");
+		outroFilme.setAno(2014); 
 		outroFilme.avaliar(10);
 		outroFilme.impressao();
 		

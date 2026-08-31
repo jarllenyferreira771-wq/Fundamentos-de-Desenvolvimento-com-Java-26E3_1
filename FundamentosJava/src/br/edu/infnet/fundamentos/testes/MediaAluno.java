@@ -1,6 +1,8 @@
-package br.edu.infnet.fundamentos;
+package br.edu.infnet.fundamentos.testes;
 
 import java.util.Scanner;
+
+import br.edu.infnet.fundamentos.model.Aluno;
 
 public class MediaAluno {
 
@@ -10,19 +12,19 @@ public class MediaAluno {
         Aluno aluno = new Aluno();
         
         System.out.print("Digite o nome do aluno: ");
-        aluno.nome = scanner.nextLine();
+        aluno.setNome( scanner.nextLine()); 
         
         System.out.print("Digite a nota do TP1: ");
-        aluno.notaTP1 = scanner.nextDouble();
-
+        aluno.setNotaTP1(scanner.nextDouble());
+        
         System.out.print("Digite a nota do TP2: ");
-        aluno.notaTP2 = scanner.nextDouble();
+        aluno.setNotaTP2(scanner.nextDouble()); 
 
         System.out.print("Digite a nota do TP3: ");
-        aluno.notaTP3 = scanner.nextDouble();
+        aluno.setNotaTP3(scanner.nextDouble());
 
-             
        aluno.imprimir();
+       
         
         scanner.close();
     }
