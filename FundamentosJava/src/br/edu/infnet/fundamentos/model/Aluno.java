@@ -7,6 +7,23 @@ public class Aluno {
 	private double notaTP2;
 	private double notaTP3;
 	
+	public Aluno(String nome) {
+		
+		if (nome.length() < 3) {
+			System.err.println("O nome precisa ter no mínimo 3 letras");
+			return;
+		}
+		
+		this.nome = nome;
+	}
+	
+	public Aluno(String nome, double notaTP1, double notaTP2, double notaTP3) {
+		
+		this(nome);
+		this.notaTP1 = notaTP1;
+		this.notaTP2 = notaTP2;
+		this.notaTP3 = notaTP3;	
+	}
 	public void imprimir(String nome) {
 		System.out.println("Maravilha!!! Bom te receber, " + nome + "!");
 	}
@@ -38,21 +55,18 @@ public class Aluno {
         System.out.println("Situacao: " + situacao);
 	} 
       
-	public void setNome(String nome) {
-		
-		this.nome = nome;
-	}
-	
-	public void setNotaTP1 (double notaTP1) {
+	public void setNotaTP1 (double notaTP1){
 		this.notaTP1 = notaTP1;
+		
 	}
 	
-	
-	public void setNotaTP2 (double notaTP2) {
+	public void setNotaTP2 (double notaTP2){
 		this.notaTP2 = notaTP2;
+		
 	}
 	
-	public void setNotaTP3 (double notaTP3) {
+	public void setNotaTP3 (double notaTP3){
 		this.notaTP3 = notaTP3;
+		
 	}
 }

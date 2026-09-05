@@ -1,10 +1,17 @@
 package br.edu.infnet.fundamentos.model;
 
+
 public class Filme {
 	
 	private String titulo;
 	private int ano;
 	private double avaliacao;
+	
+	public Filme(String titulo, int ano) {
+		this.titulo = titulo;
+		this.ano = ano;
+	}
+
 	
 	public void impressao () {		
 		System.out.printf("O filme %s lançado em %d possui a avaliação %.1f%n", titulo, ano, avaliacao);
@@ -23,10 +30,6 @@ public class Filme {
 	}
 	
 	
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
 	
 	public void avaliar (double avaliacao) {
 		
@@ -45,7 +48,4 @@ public class Filme {
 		
 	}
 	
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
 }

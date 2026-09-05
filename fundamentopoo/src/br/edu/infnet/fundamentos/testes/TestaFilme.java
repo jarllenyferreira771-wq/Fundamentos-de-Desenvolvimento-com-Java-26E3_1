@@ -6,27 +6,21 @@ public class TestaFilme {
 	
 	public static void main (String [] args) {
 		
-		Filme filmeJay = new Filme();
+		Filme filmeJay = new Filme(null, 0);
 		filmeJay.avaliar(0);
 		filmeJay.exibirResumo();
 		
-		Filme filmeMatrix = new Filme();
-		filmeMatrix.setTitulo("Matrix"); 
+		Filme filmeMatrix = new Filme("Matrix", 2000); 
 		filmeMatrix.avaliar(-5);
-		filmeMatrix.setAno(2000);
 		filmeMatrix.impressao();
 		
 		
-		Filme filmeInterestelar = new Filme();
-		filmeInterestelar.setTitulo("Interestelar");
-		filmeInterestelar.setAno(2014);
+		Filme filmeInterestelar = new Filme("Interestelar", 2014);
 		filmeInterestelar.avaliar(10);
 		filmeInterestelar.impressao();
 		filmeInterestelar.exibirResumo();
 		
-		Filme outroFilme = new Filme();
-		outroFilme.setTitulo("Interestelar");
-		outroFilme.setAno(2014); 
+		Filme outroFilme = new Filme("Interestelar", 2014); 
 		outroFilme.avaliar(10);
 		outroFilme.impressao();
 		
