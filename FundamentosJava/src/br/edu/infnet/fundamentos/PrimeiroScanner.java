@@ -23,11 +23,8 @@ public class PrimeiroScanner {
     	 }
     	  
        } while (nomeVazio);
-
-        System.out.println("Maravilha!!! Bom te receber, " + nome + "!");
         
-        Aluno aluno = new Aluno();
-        aluno.imprimir(nome);
+        new Aluno(nome).imprimir(nome);
         
         
         sc.close();
