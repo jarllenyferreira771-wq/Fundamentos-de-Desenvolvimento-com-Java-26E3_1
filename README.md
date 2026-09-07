@@ -25,7 +25,7 @@ Exercícios relacionados aos fundamentos da linguagem Java.
 ### `fundamentopoo`
 Exercícios relacionados à Programação Orientada a Objetos.
 
-### `TP2`
+### `TestePerformance`
 Atividades e trabalhos práticos desenvolvidos durante a disciplina.
 
 ## 🎓 Curso
