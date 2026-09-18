@@ -13,9 +13,13 @@ public class Caminhao extends Veiculo {
 	public void exibirResumo() {
 		System.out.printf("Caminhão: ");
 		super.exibirResumo();
-		System.out.printf(" - %.2f", capacidadeCarga);
+		System.out.printf(" - %.2f%n", capacidadeCarga);
 	}
 
-	
+	@Override
+	public double CalcularCustoManutencao() {
+		return 1500 + (capacidadeCarga * 100);
+	}
+
 
 }

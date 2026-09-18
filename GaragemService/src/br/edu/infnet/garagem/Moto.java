@@ -16,6 +16,11 @@ public class Moto extends Veiculo{
 		super.exibirResumo();
 		System.out.printf(" - %.2f%n", cilindradas);
 	}
+
+	@Override
+	public double CalcularCustoManutencao() {
+		return 300 + cilindradas;
+	}
 	
 
 }
