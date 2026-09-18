@@ -6,6 +6,7 @@ public class TestaConta {
 		
 		Conta conta = new Conta();
 		conta.titular = "Jarlene";
+		conta.numero = 12345;
 		conta.agencia = "1234";
 		conta.saldo = 1000;
 		conta.dataAbertura = "06/09/2026";
